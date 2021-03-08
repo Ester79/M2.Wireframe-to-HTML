@@ -1,0 +1,159 @@
+*{ /*Resetear por defecto los estilos globales del navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*se define un borde y color de linea para varios elementos a la vez.
+se muestran como bloque con el atributo 'display'*/
+header, section, footer, aside, nav, article, div {
+    /*border: 1px solid red;*/
+    display: block;
+}
+
+
+/*COMPONENTES DEL CONTENEDOR*/
+/*Se definen las medidas del contenedor completo*/
+.contenedor {
+    width: 1920px; /*ancho total px*/
+    height: 1035px; /*altura total px*/
+    background: lightgrey; /*color fondo del contenedor*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+/*COMPONENTES DE LA CABECERA*/
+/*se define el elemento cabecera, primer recuadro gris oscuro*/
+.cabecera {
+    background: #555555;
+    width: 1000px;
+    height: 120px; 
+    padding-left: 30px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+/*se define el rectangulo a la izquierda que hay dentro de la cabecera*/
+.cabecera1 {
+    display: inline-block; /*se especifica bloques en linea*/
+    background: lightgrey; /*se define color del rectangulo*/
+    width: 200px; /*se definen las medidas de ancho y alto en pixels*/
+    height: 60px; 
+    margin-top: 30px;
+    
+}
+
+/*se define el margen derecho de los circulos con la cabecera*/
+.circulo {
+    display:inline-block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    float: right;
+    background: lightgrey;
+    margin-top: 40px;
+    margin-inline-start: 10px; /*poner espacio entre los 3 circulos*/
+}
+
+
+/*CAJA DE NAVEGACION*/
+/*definir caja de navegacion*/
+.navegador {
+    padding-top: 20px; /*distancia desde lado top de caja navegador hasta el lado del elemento dentro de la caja*/
+    padding-bottom: 25px; /*distancia desde lado inferior de caja navegador hasta el lado del elemento dentro de la caja*/
+    width: 1000px;
+    margin-left: auto; /*se ajusta automaticamente los espacios laterales con el contenedor, considerando el ancho total de la caja navegador*/
+    margin-right: auto;
+}
+
+/*definir las listas de elementos del navegador*/
+.navegador ul li{ 
+    background: #999999;
+    border: 1px solid lightgray;
+    width: 195px;
+    height: 50px;
+    display:inline-block; /*especificar que cada elemento <li> es un bloque y se muestra lineal*/
+    list-style: none; /*eliminr los puntos marcador por defecto de las listas*/ 
+}
+
+
+/*CAJA DE CONTENIDOS Bloque3*/
+.bloque3 { /*se definen las dimensiones del bloque3*/
+    padding-bottom: 25px; /*distancia del final que se deja con el siguiente elemento*/
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bloque3 ul li { /*se define los 3 bloques en modo columnas*/
+    background: #999999;
+    display: inline-block; /*especificar que cada elemento <li> es un bloque y se muestra lineal*/
+    height: 190px; /*altura de los bloques*/
+    width: 329px;
+    margin-right: 0px;
+    margin-left: 0px;
+    list-style: none;
+    margin-inline-start: 1px; /*ancho entre los 3 bloques*/
+}
+
+
+/*SECCION News*/
+.seccion { /*se define las dimensiones completas donde se representaran las noticias*/
+    padding-bottom: 25px; /*distancia final que se deja hasta tocar con la etiqueta <footer>*/
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 0px;
+}
+
+
+.seccion ul li.news1 {
+    background: #999999;
+    display: inline-block;
+    height: 450px;
+    width: 196px;
+    list-style: none;
+    border: 0px;  
+}
+
+.seccion ul li.news2 {
+    background: #555555;
+    display: inline-block;
+    height: 450px;
+    width: 598px;
+    list-style: none; 
+    border: 0px;  
+}
+
+
+/*PIE DE PAGINA*/
+.pie {
+    padding-bottom: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pie2 {
+    height: 70px;
+    background: #555555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
